@@ -14,6 +14,7 @@ dados = cursor.execute('SELECT * FROM alunos')
 dados = cursor.execute('SELECT * FROM alunos WHERE idade>20')
 dados = cursor.execute('SELECT curso FROM alunos GOURP BY nome ') 
 dados = cursor.execute('SELECT COUNT(nome) FROM alunos') 
+
 for usuario in dados:
      print(usuario)
 
